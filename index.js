@@ -66,5 +66,3 @@ function timerFunc() {
 var timer = setTimeout(timerFunc, 1000);
 
 client.login("NDc0OTMzNzkzMDAyNzQ5OTUy.DncXOw.OeeXpLP8-CpCmBsNvwNGVMC1JV0");
-});
-client.login(process.env.BOT_TOKEN);
