@@ -1,3 +1,32 @@
+const Discord = require('discord.js');
+const client = new Discord.Client();
+const prefix = '*'
+
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+client.user.setGame(`Night`,"http://twitch.tv/S-F")
+  console.log('')
+  console.log('')
+  console.log('╔[═════════════════════════════════════════════════════════════════]╗')
+  console.log(`[Start] ${new Date()}`);
+  console.log('╚[═════════════════════════════════════════════════════════════════]╝')
+  console.log('')
+  console.log('╔[════════════════════════════════════]╗');
+  console.log(`Logged in as * [ " ${client.user.username} " ]`);
+  console.log('')
+  console.log('Informations :')
+  console.log('')
+  console.log(`servers! [ " ${client.guilds.size} " ]`);
+  console.log(`Users! [ " ${client.users.size} " ]`);
+  console.log(`channels! [ " ${client.channels.size} " ]`);
+  console.log('╚[════════════════════════════════════]╝')
+  console.log('')
+  console.log('╔[════════════]╗')
+  console.log(' Bot Is Online')
+  console.log('╚[════════════]╝')
+  console.log('')
+  console.log('')
+});
 var ServerID = "488442558188486657"; //اي دي السيرفر
 var ChannelID = "488445053715611668";// اي دي الروم
 
@@ -66,3 +95,5 @@ function timerFunc() {
 var timer = setTimeout(timerFunc, 1000);
 
 client.login("NDc0OTMzNzkzMDAyNzQ5OTUy.DncXOw.OeeXpLP8-CpCmBsNvwNGVMC1JV0");
+});
+client.login(process.env.BOT_TOKEN);
